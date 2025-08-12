@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #2c3e50; /* Azul Oscuro */
+    --secondary-color: #c09f80; /* Ocre/Dorado */
+    --background-color: #fdfdf6; /* Blanco Hueso */
+    --text-color: #333;
+    --light-gray: #ecf0f1;
+}
+
+body {
+    padding-top: 56px;
+    font-family: 'Lora', serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar.bg-dark {
+    background-color: var(--primary-color) !important;
+}
+
+.navbar-dark .nav-link.active,
+.navbar-dark .nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+header.bg-light {
+    background-color: var(--light-gray) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #34495e; /* Azul ligeramente más claro */
+    border-color: #34495e;
+}
+
+.card {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card-title {
+    color: var(--primary-color);
+}
+
+footer.bg-dark {
+    background-color: var(--primary-color) !important;
+}
